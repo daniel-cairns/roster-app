@@ -68,24 +68,5 @@ h2 {
 	font-size: 2em;
 }
 .roster {
-	background: $white;
-	color: $darkText;
-	ul{
-		list-style: none;
-		text-transform: capitalize;
-		li {
-			font-size: 2em;
-			border-bottom: 1px solid $blueGrey;
-			a {
-				text-decoration: none;
-				line-height: 3em;
-				color: $darkText;
-			}
-
-			i {
-				padding: 0.5em;
-				color: $lightGrey;
-			}
-		}
-	}
+	
 }

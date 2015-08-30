@@ -58,21 +58,4 @@ h2 {
   text-transform: uppercase;
   font-size: 2em; }
 
-.roster {
-  background: #FFFFFF;
-  color: #212121; }
-  .roster ul {
-    list-style: none;
-    text-transform: capitalize; }
-    .roster ul li {
-      font-size: 2em;
-      border-bottom: 1px solid #607D8B; }
-      .roster ul li a {
-        text-decoration: none;
-        line-height: 3em;
-        color: #212121; }
-      .roster ul li i {
-        padding: 0.5em;
-        color: #B6B6B6; }
-
 /*# sourceMappingURL=styles.css.map */
