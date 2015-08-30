@@ -1,0 +1,91 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+$darkIndigo:   	#303F9F;
+$lightIndigo:  	#3F51B5;
+$skyIndigo:  	#C5CAE9;
+$white:   		#FFFFFF;
+$blueGrey:      #607D8B;
+$darkText:   	#212121;
+$secondaryGrey: #727272;
+$lightGrey:     #B6B6B6;
+
+.title {
+	border-top: 20px solid $darkIndigo;
+	text-align: center;
+	background: $lightIndigo;
+	color: $white;
+}
+h1 {
+	padding: 0.5em 0;
+	text-transform: uppercase;
+	font-size: 4em;
+}
+.name {
+	text-align: center;
+	background: $skyIndigo;
+	color: $white;
+}
+h2 {
+	padding: 0.5em 0;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+.roster {
+	background: $white;
+	color: $darkText;
+	ul{
+		list-style: none;
+		text-transform: capitalize;
+		li {
+			font-size: 2em;
+			border-bottom: 1px solid $blueGrey;
+			a {
+				text-decoration: none;
+				line-height: 3em;
+				color: $darkText;
+			}
+
+			i {
+				padding: 0.5em;
+				color: $lightGrey;
+			}
+		}
+	}
+}
