@@ -30,7 +30,7 @@ body {
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
+    font-size:62.5%;
     height:100%;
     margin:0px;
     padding:0px;
@@ -68,5 +68,57 @@ h2 {
 	font-size: 2em;
 }
 .roster {
+	a {
+		line-height: 60px;
+		width: 100%;
+		display: block;
+		padding-left: 20px;
+		text-decoration: none;
+		font-size: 1.8em;
+		color: $secondaryGrey;
+		border-bottom: 1px solid $lightGrey;
+		position: relative;
+		transition: background-color 0.5s ease;
+	}
+
+	i {
+		vertical-align: middle;
+		padding-right: 10px;
+		line-height: 100%;
+		color: $lightGrey;
+		transition: color 0.5s ease;
+
+	}
+	span {
+		color: $darkText;
+		transition: color 0.5s ease;
+	}
 	
+	small {
+		position: absolute;
+		left: 60px;
+		bottom: 10px;
+		font-size: 0.5em;
+		line-height: 1em;
+		color: $secondaryGrey;
+		transition: color 0.5s ease;
+	}
+
+	a:focus {
+		background-color: $blueGrey;
+		
+		i {
+			color: $blueGrey;
+		}
+
+		span {
+			color: $lightGrey;
+		}
+
+		small{
+			color: $white;
+		}
+
+	}
+
 }

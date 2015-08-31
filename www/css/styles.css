@@ -31,7 +31,7 @@ body {
   /* prevent copy paste, to allow, change 'none' to 'text' */
   background-attachment: fixed;
   font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 62.5%;
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -57,5 +57,42 @@ h2 {
   padding: 0.5em 0;
   text-transform: uppercase;
   font-size: 2em; }
+
+.roster a {
+  line-height: 60px;
+  width: 100%;
+  display: block;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 1.8em;
+  color: #727272;
+  border-bottom: 1px solid #B6B6B6;
+  position: relative;
+  transition: background-color 0.5s ease; }
+.roster i {
+  vertical-align: middle;
+  padding-right: 10px;
+  line-height: 100%;
+  color: #B6B6B6;
+  transition: color 0.5s ease; }
+.roster span {
+  color: #212121;
+  transition: color 0.5s ease; }
+.roster small {
+  position: absolute;
+  left: 60px;
+  bottom: 10px;
+  font-size: 0.5em;
+  line-height: 1em;
+  color: #727272;
+  transition: color 0.5s ease; }
+.roster a:focus {
+  background-color: #607D8B; }
+  .roster a:focus i {
+    color: #607D8B; }
+  .roster a:focus span {
+    color: #B6B6B6; }
+  .roster a:focus small {
+    color: #FFFFFF; }
 
 /*# sourceMappingURL=styles.css.map */
