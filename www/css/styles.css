@@ -22,6 +22,12 @@ time, mark, audio, video {
   -webkit-tap-highlight-color: transparent;
   /* make transparent link selection, adjust last value opacity 0 to 1.0 */ }
 
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
 body {
   -webkit-touch-callout: none;
   /* prevent callout to copy image, etc when tap to hold */
@@ -37,11 +43,16 @@ body {
   padding: 0px;
   width: 100%; }
 
+.wrapper {
+  width: 90%;
+  margin: 0 auto; }
+
 .title {
   border-top: 20px solid #303F9F;
   text-align: center;
   background: #3F51B5;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  width: 100%; }
 
 h1 {
   padding: 0.5em 0;
@@ -68,16 +79,16 @@ h2 {
   color: #727272;
   border-bottom: 1px solid #B6B6B6;
   position: relative;
-  transition: background-color 0.5s ease; }
+  transition: background-color 0.5s ease-in-out; }
 .roster i {
   vertical-align: middle;
   padding-right: 10px;
   line-height: 100%;
   color: #B6B6B6;
-  transition: color 0.5s ease; }
+  transition: color 0.5s ease-in-out; }
 .roster span {
   color: #212121;
-  transition: color 0.5s ease; }
+  transition: color 0.5s ease-in-out; }
 .roster small {
   position: absolute;
   left: 60px;
@@ -85,14 +96,30 @@ h2 {
   font-size: 0.5em;
   line-height: 1em;
   color: #727272;
-  transition: color 0.5s ease; }
+  transition: color 0.5s ease-in-out; }
 .roster a:focus {
-  background-color: #607D8B; }
+  background-color: #607D8B;
+  transition: background-color 0.5s ease-in-out; }
   .roster a:focus i {
-    color: #607D8B; }
+    color: #607D8B;
+    transition: color 0.5s ease-in-out; }
   .roster a:focus span {
-    color: #B6B6B6; }
+    color: #B6B6B6;
+    transition: color 0.5s ease-in-out; }
   .roster a:focus small {
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    transition: color 0.5s ease-in-out; }
+.roster h2 {
+  padding-left: 20px; }
+
+table {
+  width: 100%;
+  font-size: 2em; }
+
+thead {
+  border-top: 1px solid #212121; }
+
+tbody, th, td, tr {
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
